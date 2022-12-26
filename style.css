@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --color-1: #2f3240;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e8eef3;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container0 {
+  max-width: 1170px;
+  margin: auto;
+  /* width: 100%; */
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+/*header*/
+.header {
+  background-color: var(--color-1);
+  padding: 12px 0;
+  line-height: 1.5;
+}
+
+.header .logo,
+.header .nav {
+  padding: 0 15px;
+}
+.header .logo a {
+  font-size: 30px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.header .nav ul li {
+  display: inline-block;
+  margin-left: 40px;
+}
+.header .nav ul li a {
+  display: block;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding: 10px 0;
+  transition: all 0.5s ease;
+}
+.header .nav ul li a.active,
+.header .nav ul li a:hover {
+  color: #f3a93d;
+}
+.nav-toggler {
+  height: 34px;
+  width: 44px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  display: none;
+  margin-right: 15px;
+}
+.nav-toggler:focus {
+  outline: none;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+.nav-toggler span {
+  height: 2px;
+  width: 20px;
+  background-color: var(--color-1);
+  display: block;
+  margin: auto;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.nav-toggler.active span {
+  background-color: transparent;
+}
+.nav-toggler span::before,
+.nav-toggler span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-1);
+  transition: all 0.3s ease;
+}
+.nav-toggler span::before {
+  transform: translateY(-6px);
+}
+.nav-toggler.active span::before {
+  transform: rotate(45deg);
+}
+.nav-toggler span::after {
+  transform: translateY(6px);
+}
+.nav-toggler.active span::after {
+  transform: rotate(135deg);
+}
+
+/* ----------------------------------Hero Section-------------------------------  */
+
+.container1 {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-image: url(https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=1600);
+  background-size: cover;
+}
+
+.container1 .card {
+  width: 270px;
+  overflow: hidden;
+  border: 2px solid crimson;
+  border-radius: 15px;
+  box-shadow: 0 0 7px rgba (0, 0, 0, 0.8);
+  text-align: center;
+  margin: 100px 50px;
+  background-color: rgb(196, 179, 179);
+}
+
+.container1 .card .product-image {
+  width: 230px;
+  margin: 20px auto;
+}
+
+.container1 .card .product-image img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.container1 .card .product-image img:hover {
+  transform: scale(1.1);
+}
+
+.container1 .card .product-info h4 {
+  font-size: 18px;
+  padding: 0 25px;
+  margin-bottom: 10px;
+}
+
+.container1 .card .btn {
+  width: 100%;
+}
+
+.container1 .card .btn button {
+  width: 100%;
+  padding: 10px;
+  background: crimson;
+  border: 1px solid grey;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 0 0 15px 15px;
+}
+/* -------------------------------------------------------- */
+
+.surface {
+  background-color: rgb(196, 179, 179);
+  border-radius: 15px;
+  border: 2px solid crimson;
+}
+
+h2{
+	text-align: center;
+	margin: 40px auto;
+	font-size: 50px;
+}
+.container-fluid{
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1000px;
+}
+.container{
+	max-width: 500px;
+	width: 50%;
+	float: left;
+	margin: 0 auto;
+	border: none;
+	padding: 20px;
+}
+fieldset{
+	padding: 20px;
+	margin: 20px 0;
+	border: 1px solid #cccccc;
+	font-size: 16px;
+
+}
+legend{
+	margin-left: 20px;
+	font-size: 20px;
+}
+input{
+	width: auto;
+	margin: 10px;
+	padding: 5px;
+	font-size: 18px;
+}
+h3{
+	margin: 5px 0;
+}
+table{
+	width: 100%;
+	margin-top: 20px;
+	border: none;
+	text-align: center;
+}
+table td,table th{
+	padding: 5px;
+	margin: 0;
+	border: 1px solid #000000;
+}
+table tr td:last-child{
+	text-align: right;
+}
+ul li{
+	padding: 5px;
+	margin: 10px 0;
+}

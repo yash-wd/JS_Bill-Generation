@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Way2Food</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- ----------------------------------Navbar------------------------------- -->
+
+    <header class="header">
+      <div class="container0">
+        <div class="row align-items-center justify-content-between">
+          <div class="logo">
+            <a href="#"
+              >wa<span style="color: #fe2727; font-weight: bold">Y</span
+              >2food</a
+            >
+          </div>
+          <button type="button" class="nav-toggler">
+            <span></span>
+          </button>
+          <nav class="nav">
+            <ul>
+              <li><a href="#">home</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">services</a></li>
+              <li><a href="#">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- --------------------------------Hero Section------------------------------ -->
+
+    <div class="container1">
+    
+      <div class="card">
+        <div class="product-image">
+          <img
+            src="https://media.istockphoto.com/photos/chicken-lollipop-on-a-white-platter-garnished-with-scallion-picture-id1269099250?k=20&m=1269099250&s=612x612&w=0&h=cwcPKcVtxi3y484WPlTWprGpATbtAcIllLl3KGRUoOM="
+            alt="Starters"
+          />
+        </div>
+        <div class="product-info">
+          <h3>Starters</h3>
+          <h3>₹ 500.</h3>
+        </div>
+        <div class="btn">
+          <button type="button">Add to Bill</button>
+        </div>
+      </div>
+      <!-- -------------------------------------------------- -->
+      <div class="card">
+        <div class="product-image">
+          <img
+            src="https://img.freepik.com/premium-photo/indian-lunch-dinner-main-course-food-group-includes-paneer-butter-masala-dal-makhani-palak-paneer-roti-rice-etc-selective-focus_466689-6805.jpg?w=2000"
+            alt="Main Course"
+          />
+        </div>
+        <div class="product-info">
+          <h3>Main Course</h3>
+          <h3>₹ 1500.</h3>
+        </div>
+        <div class="btn">
+          <button type="button">Add to Bill</button>
+        </div>
+      </div>
+      <!-- -------------------------------------------------- -->
+      <div class="card">
+        <div class="product-image">
+          <img
+            src="https://wallpaperaccess.com/full/1739009.jpg"
+            alt="Indian Food"
+          />
+        </div>
+        <div class="product-info">
+          <h3>Indian Food</h3>
+          <h3>₹ 900.</h3>
+        </div>
+        <div class="btn">
+          <button type="button">Add to Bill</button>
+        </div>
+      </div>
+      <!-- -------------------------------------------------- -->
+      <div class="card">
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1523905330026-b8bd1f5f320e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hpbmVzZSUyMGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            alt="Chinese"
+          />
+        </div>
+        <div class="product-info">
+          <h3>Chinese</h3>
+          <h3>₹ 650.</h3>
+        </div>
+        <div class="btn">
+          <button type="button">Add to Bill</button>
+        </div>
+      </div>
+      <!-- -------------------------------------------------- -->
+      <div class="card">
+        <div class="product-image">
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/871/116/994/food-ice-cream-sweets-cake-wallpaper-preview.jpg"
+            alt="Desserts"
+          />
+        </div>
+        <div class="product-info">
+          <h3>Desserts</h3>
+          <h3>₹ 450.</h3>
+        </div>
+        <div class="btn">
+          <button type="button">Add to Bill</button>
+        </div>
+      </div>
+      <!-- -------------------------------------------------- -->
+
+      <section class="surface">
+        <h2><u>wa<span style="color: #fe2727; font-weight: bold">Y</span
+            >2food Bill</u></h2>
+        <div class="container-fluid">
+          <div class="container">
+            <div class="part1">
+              <fieldset>
+                <legend>Personal Information</legend>
+                Full Name: <input type="text" id="name" /> <br />
+
+                Your Email: <input type="text" id="email" />
+              </fieldset>
+            </div>
+
+            <div class="part2">
+              <fieldset>
+                <legend>Your Orders</legend>
+                Starter (₹ 500): <input type="number" placeholder="Quantity Here" id="starters" /> <br />
+                Main Course (₹ 1500): <input type="number" placeholder="Quantity Here" id="main_Course" /><br />
+                Indian (₹ 900): <input type="number" placeholder="Quantity Here" id="indian" /><br />
+                Chinese (₹ 650): <input type="number" placeholder="Quantity Here" id="chinese" /><br />
+                Desserts (₹ 450): <input type="number" placeholder="Quantity Here" id="desserts" /><br />
+              </fieldset>
+            </div>
+          </div>
+
+          <div class="container">
+            <fieldset>
+              <legend>Your Bill</legend>
+              <h3>Your Name:<span id="name2"></span></h3>
+              <h3>Email: <span id="email2"></span></h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Menu</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Amount</th>
+                  </tr>
+                </thead>
+                <tbody id="bill">
+                </tbody>
+              </table>
+            </fieldset>
+            <h1>Amount: Rs. <span id="amount" style="color: rgb(32, 4, 123);"></span></h1>
+            <h1>GST: Rs. <span id="gst" style="color: rgb(32, 4, 123);"></span></h1>
+            <h1>Total Amount : Rs. <span id="total" style="color: rgb(32, 4, 123);"></span></h1>
+            <h1>Total Amount with Tip: Rs. <span id="tip" style="color: rgb(32, 4, 123);"></span></h1>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
